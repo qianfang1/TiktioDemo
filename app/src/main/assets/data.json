@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "道德经",
+    "videoUrl": "video01",
+    "coverUrl": "png01",
+    "likeCount": 1205,
+    "nickname": "用户 A",
+    "avatarUrl": "avatar01"
+  },
+  {
+    "id": 2,
+    "title": "毛选",
+    "videoUrl": "video02",
+    "coverUrl": "png02",
+    "likeCount": 89,
+    "nickname": "用户 B",
+    "avatarUrl": "avatar02"
+  },
+  {
+    "id": 3,
+    "title": "test03",
+    "videoUrl": "video03",
+    "coverUrl": "png03",
+    "likeCount": 22,
+    "nickname": "用户 C",
+    "avatarUrl": "avatar03"
+  },
+  {
+    "id": 4,
+    "title": "test04",
+    "videoUrl": "video04",
+    "coverUrl": "png04",
+    "likeCount": 100,
+    "nickname": "用户 D",
+    "avatarUrl": "avatar04"
+  }
+]
