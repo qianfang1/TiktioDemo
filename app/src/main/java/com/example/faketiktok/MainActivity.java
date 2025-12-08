@@ -68,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initView() {
         rvVideoList = findViewById(R.id.rv_video_list);
+        refreshLayout = findViewById(R.id.refreshLayout);
         // 设置下拉刷新监听器
         refreshLayout.setOnRefreshListener(new OnRefreshListener() {
             @Override
