@@ -45,7 +45,7 @@ dependencies {
     annotationProcessor("com.github.bumptech.glide:compiler:4.12.0")
     implementation("com.google.code.gson:gson:2.10.1")
 
-    implementation("io.github.scwang90:refresh-layout-kernel:2.0.6")
-    implementation("io.github.scwang90:refresh-header-classics:2.0.6")
+    implementation("io.github.scwang90:refresh-layout-kernel:2.1.0")
+    implementation("io.github.scwang90:refresh-header-classics:2.1.0")
 
 }

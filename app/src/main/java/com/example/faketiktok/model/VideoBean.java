@@ -16,6 +16,7 @@ public class VideoBean implements Serializable {
     private int likeCount;
     private String nickname;
     private String avatarUrl;
+    private boolean isLiked;
 
     public VideoBean() {
     }
@@ -40,4 +41,7 @@ public class VideoBean implements Serializable {
 
     public String getAvatarUrl() { return avatarUrl; }
     public void setAvatarUrl(String avatarUrl) { this.avatarUrl = avatarUrl; }
+
+    public boolean isLiked() { return isLiked; }
+    public void setLiked(boolean liked) { isLiked = liked; }
 }

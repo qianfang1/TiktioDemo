@@ -25,6 +25,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
+        android:id="@+id/iv_play_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_play_arrow"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
         android:id="@+id/iv_back"
         android:layout_width="30dp"
         android:layout_height="30dp"
@@ -75,7 +86,7 @@
             android:id="@+id/iv_like"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@android:drawable/btn_star_big_off" />
+            android:src="@drawable/ic_heart" />
 
         <TextView
             android:id="@+id/tv_like_count"

@@ -58,24 +58,23 @@ public class CommentDialog extends BottomSheetDialogFragment {
         btnSend.setOnClickListener(v -> {
             String content = etContent.getText().toString().trim();
             if (!TextUtils.isEmpty(content)) {
-                // 1. 创建新评论对象 (模拟当前用户)
-                // 这里我们暂时写死头像和昵称，实际项目中通常从登录用户信息里获取
+                // 1. 创建新评论对象
+                // 暂时写死头像和昵称，实际项目中通常从登录用户信息里获取
                 CommentBean newComment = new CommentBean(
                         "https://p3.itc.cn/q_70/images03/20220325/40e84b2c011e4a07a16e72c841315668.jpeg",
                         "我",
                         content
                 );
 
-                // 2. 把新评论加到列表的最前面 (索引 0)，这样它会显示在第一行
+                // 2. 把新评论加到列表的最前面 (索引 0)
                 commentList.add(0, newComment);
 
-                // 3. 关键一步：通知适配器数据变了，赶紧刷新界面！
+                // 3. 通知适配器数据变了刷新界面
                 commentAdapter.notifyDataSetChanged();
 
                 Toast.makeText(getContext(), "评论发送成功", Toast.LENGTH_SHORT).show();
                 etContent.setText(""); // 清空输入框
 
-                // 体验优化：发送完自动滚动到列表顶部，让用户看到自己的评论
                 rvCommentList.scrollToPosition(0);
             } else {
                 Toast.makeText(getContext(), "请输入评论内容", Toast.LENGTH_SHORT).show();
